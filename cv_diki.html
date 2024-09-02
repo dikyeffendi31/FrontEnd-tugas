@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Ahmad Diky Effendi</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .change-color-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: #f2ea0e;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <script>
+        function changeBackgroundColor() {
+            var kolomKiri = document.querySelector('.kolom-kiri');
+            if (kolomKiri.style.backgroundColor === 'red') {
+                kolomKiri.style.backgroundColor = '#F7B500'; 
+            } else {
+                kolomKiri.style.backgroundColor = 'red'; 
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -69,5 +94,7 @@
             </div>
         </div>
     </div>
+    <br>
+    <button class="change-color-btn" onclick="changeBackgroundColor()">Ubah background</button>
 </body>
 </html>
